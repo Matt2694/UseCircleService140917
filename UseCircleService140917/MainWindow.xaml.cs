@@ -24,5 +24,21 @@ namespace UseCircleService140917
         {
             InitializeComponent();
         }
+
+        private CircleService.CircleServiceClient _service = new CircleService.CircleServiceClient();
+
+        private void Diameter_Click(object sender, RoutedEventArgs e)
+        {
+            double input = Double.Parse(TextBox1.Text);
+            double output = _service.CalcDiameter(input);
+            Label1.Content = output;
+        }
+
+        private void Circumference_Click(object sender, RoutedEventArgs e)
+        {
+            double input = Double.Parse(TextBox1.Text);
+            double output = _service.CalcCircumference(input);
+            Label1.Content = output;
+        }
     }
 }

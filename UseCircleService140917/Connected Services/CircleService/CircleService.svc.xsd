@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://webservicedemo.datamatiker-skolen.dk/CircleService.svc" elementFormDefault="qualified" targetNamespace="http://webservicedemo.datamatiker-skolen.dk/CircleService.svc" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="CalcDiameter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="radius" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalcDiameterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CalcDiameterResult" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalcCircumference">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="radius" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalcCircumferenceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CalcCircumferenceResult" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

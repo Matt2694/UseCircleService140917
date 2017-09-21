@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UseCircleService140917"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="200" Width="250">
     <Grid>
-        
+        <Label x:Name="Label1" Content="" HorizontalAlignment="Left" Margin="98,34,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Circumference" Content="Circumference" HorizontalAlignment="Left" Margin="137,71,0,0" VerticalAlignment="Top" Width="86" Click="Circumference_Click"/>
+        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Height="19" Margin="38,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60"/>
+        <Button x:Name="Diameter" Content="Diameter" HorizontalAlignment="Left" Margin="137,105,0,0" VerticalAlignment="Top" Width="86" Click="Diameter_Click"/>
+
     </Grid>
 </Window>
